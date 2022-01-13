@@ -1,0 +1,909 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Montserrat;
+
+}
+
+
+:root{
+    --primary-color:#FF214F;
+    --black:#1C1C1C;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family: Montserrat;
+    overflow-x: hidden;
+}
+
+
+html::-webkit-scrollbar {
+    width: .5rem;
+}
+
+html::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+html::-webkit-scrollbar-thumb {
+    background: rgb(51, 51, 51);
+    border-radius: 5rem;
+}
+
+
+
+/* ----------------------------------------- Universal Classes */
+
+.w-40{
+    width: 40%;
+}
+img{
+    width: 100%;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul li{
+    list-style: none;
+}
+
+.py-10{
+    padding: 100px 0;
+}
+
+/* ----------------------------------------- Universal Classes */
+
+
+nav ul li a {
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.search {
+    border-color: rgba(255, 255, 255, 0.5) !important;
+}
+
+.social-icon ul li {
+    padding-left: 10px;
+}
+
+nav {
+    color: white !important;
+}
+
+button {
+    box-shadow: none !important;
+    border: none !important;
+}
+
+img {
+    object-fit: cover;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    z-index: 9;
+    width: 100%;
+    padding: 20px 0;
+}
+
+header .logo-img{
+    max-width: 150px;
+}
+
+header .nav-link{
+    transition:all .2s ease-in-out;
+}
+
+header .nav-link:hover {
+    transform: translateY(-5px);
+}
+
+
+.slide-content button {
+    background: none;
+    padding: 15px 30px;
+    border: 1px solid rgb(255, 255, 255) !important;
+    font-weight: 600 !important;
+    transition: all .3s !important;
+}
+
+.slide-content h4 {
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+.slide-content h2 {
+    font-size: 55px !important;
+    letter-spacing: 1px !important;
+    font-weight: 900 !important;
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+.slide-content button:hover {
+    background-color: white;
+    color: black !important;
+    letter-spacing: 1px !important;
+}
+
+.carousel-item {
+    position: relative;
+}
+
+.carousel-item img {
+    object-fit: cover;
+}
+
+.carousel-item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.carousel-caption h6 {
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.carousel-caption h2 {
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 56px;
+}
+
+.carousel-caption button {
+    background: none;
+    border: 1px solid rgb(255, 255, 255) !important;
+    margin-top: 19px;
+    padding: 15px 30px;
+    font-weight: 500;
+    transition: all .2s ease-in-out;
+    border-radius: 100px;
+}
+
+.carousel-caption button:hover {
+    background-color: white;
+    color: black !important;
+}
+
+/* ----------------------------------------------------------- End Main Section */
+
+/* --------------------------------------------------------- Start About Section */
+
+
+.about{
+    background-image: url(../assets/about-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+
+.about .about-right .about-slog{
+    font-size: 16px;
+    color: var(--primary-color);
+    letter-spacing: .1rem;
+    font-weight: 500;
+    font-family: Montserrat;
+
+}
+
+
+.about .about-right h5{
+    font-size: 32px;
+    letter-spacing: .1rem;
+    font-weight: 600;
+    font-family: Montserrat;
+}
+
+.about .about-right p{
+    color: rgba(0, 0, 0, 0.75);
+    font-size: 14px;
+}
+
+.about .about-icon{
+    color: var(--primary-color);
+    font-size: 36px;
+}
+
+
+.about .feature h5{
+    font-weight: 700;
+    font-size: 16px;
+    
+}
+
+
+/* --------------------------------------------------------- End About Section */
+
+
+
+/* --------------------------------------------------------- Start Solutions Section */
+
+
+
+.solution{
+    padding: 100px 0;
+}
+
+.solution h2{
+    font-size: 50px;
+    font-weight: 800;
+    color: var(--black);
+}
+
+.solution p{
+    font-size: 24px;
+    letter-spacing: .5px;
+    font-weight: 500;
+    color: var(--black);
+}
+
+.solution .sol-explore{
+    padding: 16px 26px;
+    transition: all .3s ease-in-out;
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+.solution .sol-explore:hover{
+    transform: translateY(-8px);
+}
+
+.solution .sol-free{
+    background:none;
+    color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+    font-weight: 600;
+    
+}
+
+
+.solution .solution-img img{
+    border-radius: 8px;
+}
+
+
+.solution .solution-img{
+    border-radius: 8px;
+    position: relative;
+    box-shadow: 30px 30px 1px 0px rgba(255, 33, 79,.2);
+}
+
+.solution .solution-img::before{
+    content: '';
+    position:absolute;
+    background-image: url(../assets/dots.png);
+    top: -50px;
+    left: -50px;
+    height: 250px;
+    width: 250px;
+    background-size: cover;
+    z-index: -1;
+    background-repeat: no-repeat;
+
+}
+
+/* --------------------------------------------------------- End Solutions Section */
+
+/* --------------------------------------------------------- Start Services Section */
+
+.services h2{
+    font-weight: 700;
+}
+
+
+.services .title-discription{
+    max-width: 60%;
+    font-size: 14px;
+}
+
+
+.services .service-card-icon{
+    background-color: var(--primary-color);
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+}
+
+
+.services .service-card .service-card-icon i{
+    font-size: 24px;
+}
+
+
+.services .service-card h5{
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.services .service-card p{
+    font-size: 14px;
+}
+
+.services .service-card .card::before{
+    content: '';
+    background-color: var(--primary-color);
+    height: 0;
+    width: 2px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transition: all .3s ease-in-out;
+}
+
+
+
+.services .service-card .inner-card{
+   /* border: 2px solid var(--primary-color); */
+   position: relative; 
+}
+
+
+.services .service-card .inner-card::before{
+    content: '';
+    height: 0;
+    width: 0;
+    background-color:transparent;
+    border-top: 0px solid var(--primary-color);
+    border-right: 0px solid var(--primary-color);
+    position: absolute;
+    top: 0;
+    right: 0;
+    transition: all .3s ease-in-out;
+}
+.services .service-card .inner-card::after{
+    content: '';
+    height: 0;
+    width: 0;
+    background-color:transparent;
+    border-bottom: 0px solid var(--primary-color);
+    border-left: 0px solid var(--primary-color);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: all .3s ease-in-out;
+}
+.services .service-card .inner-card:hover:after,
+.services .service-card .inner-card:hover:before{
+    border-width: 2px;
+    height: 100%;
+    width: 100%;
+}
+
+
+
+
+/* .services .service-card .card::after{
+    content: '';
+    background-color: var(--primary-color);
+    height: 2px;
+    width: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transition: all .3s ease-in-out;
+}
+.services .service-card .card:hover:before 
+{
+    height: 100%;
+}
+.services .service-card .card:hover:after 
+{
+    width: 100%;
+}
+ */
+
+
+
+/* --------------------------------------------------------- End Services Section */
+
+
+/* --------------------------------------------------------- Start Option Section */
+
+.option .option-content{
+    background-color: var(--black);
+}
+
+
+
+.option .option-left{
+    background-image: url(../assets/option.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.option .option-right{
+    background-image: url(../assets/option2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+
+.option .subtitle {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 18px;
+}
+
+.option p{
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.option button{
+    background-color: transparent;
+    transition: all .3s ease-in-out;
+    border: 1px solid rgb(255, 255, 255) !important;
+}
+.option button:hover{
+    background-color: white;
+    color: var(--black);
+}
+
+/* --------------------------------------------------------- End Option Section */
+
+/* - ---------------------------- Start Portfolio Section */
+
+.portfolio .nav-item{
+    font-weight: 600;
+    font-size: 12px;
+    border-bottom: 0px solid var(--black);
+    transition:  all 0.3s ;
+    cursor: pointer;
+}
+
+.portfolio .nav-item:hover{
+    border-width: 1px;
+}
+
+
+.portfolio .gallery{
+    position: relative;
+    height: auto;
+    /* width: 80%;
+    margin: auto; */
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 10px;
+    grid-auto-flow: dense;
+}
+
+.portfolio .gallery .portfolio-img{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.portfolio .gallery .portfolio-img:first-child{
+    grid-column-start: span 2;
+    grid-row-start: span 2;
+}
+
+.portfolio .gallery .portfolio-img:nth-child(2n+3){
+    grid-row-start: span 2;
+}
+
+.portfolio .gallery .portfolio-img:nth-child(4n+5){
+    grid-column-start: span 2;
+    grid-row-start: span 2;
+}
+
+
+.portfolio .portfolio-img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    filter: grayscale(100%);
+    transition: all .1s ease-in-out;
+}
+
+.portfolio .portfolio-img img:hover{
+    filter: grayscale(0);
+}
+
+
+/* - ---------------------------- End Portfolio Section */
+
+/* - ---------------------------- Start Feature Section */
+
+.feature h2{
+    font-weight: 600;
+}
+
+.feature .check-lines li{
+    border-bottom: 1px solid rgba(0, 0, 0, .16);
+    font-size: 14px;
+    position: relative;
+}
+
+.feature .check-lines li:last-child{
+    border: none;
+}
+
+.feature .check-lines li:before{
+    content: "\f00c";
+    position: absolute;
+    left: 0;
+    font-family: Font Awesome\ 5 Free;
+    font-weight: 900;
+}
+
+
+/* - ---------------------------- End Feature Section */
+
+/* - ---------------------------- Start Digital Section */
+
+.digital {
+    background-color: #ebe9eb;
+}
+
+.digital .digital-card p {
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.digital .digital-card i {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.digital .digital-right {
+    background-image: url(../assets/digital.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+/* - ---------------------------- End Digital Section */
+
+
+/* - ---------------------------- Start Serv Section */
+
+.serv .heading h6 {
+    color: rgba(0, 0, 0, 0.5);
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.serv .heading h2 {
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.8);
+    position: relative;
+}
+
+.serv .heading h2::before {
+    content: '';
+    background-color: var(--primary-color);
+    height: 1px;
+    width: 150px;
+    position: absolute;
+    top: 130%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+.serv .serv-card h5{
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.serv .serv-card h6 {
+    font-size: 14px;
+}
+
+.serv .service-img{
+    transform-style: preserve-3d;
+    transition: all .5s ease-in-out;
+}
+
+.serv .service-img:hover{
+    transform: perspective(1000px) rotateX(180deg);
+}
+
+.back-content{
+    top: 0%;
+    left: 0;
+    height: 100%;
+    font-size: 12px;
+    width: 100%;
+    background-color: var(--primary-color);
+    transform: rotateX(180deg);
+}
+
+/* - ---------------------------- End Serv Section */
+
+
+/* - ---------------------------- Start Feature Section */
+
+.feature .feature-card{
+    transform: translateY(20px);
+    transition: all .3s ease-in-out;
+}
+
+.feature .feature-card p{
+    opacity: 0;
+    transition: all .3s ease-in-out;
+}
+
+.feature .feature-card:hover p{
+    
+    opacity: 1;
+}
+
+.feature .feature-card:hover{
+    transform: translateY(-10px);
+}
+
+
+/* - ---------------------------- End Feature Section */
+
+/* - ---------------------------- Start Feature Video Section */
+
+.feature-video{
+    background-image: url(../assets/back.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 9;
+}
+
+.feature-video::before {
+    content: '';
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.7);
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+
+.feature-video img{
+    width: 60px;
+    transition: all .2s ease-in-out;
+}
+
+.feature-video a:hover img{
+    transform: scale(1.2);
+}
+
+.feature-video h2{
+    font-size: 50px;
+}
+
+.feature-video p{
+    max-width: 600px;
+    font-size: 14px;
+}
+
+.feature-video button{
+    border: 1px solid rgba(255, 255, 255, 1) !important;
+    background-color: rgba(255, 255, 255, 1);
+    transition: all .3s ease-in-out;
+}
+
+.feature-video button:hover{
+    background-color: transparent;
+    color: rgba(255, 255, 255, 1);
+}
+
+/* - ---------------------------- End Feature Video Section */
+
+/* - ---------------------------- Start Languages Section */
+
+.languages img{
+    width: 50%;
+}
+
+/* - ---------------------------- End Languages Video Section */
+
+/* - ---------------------------- Start Review Section */
+
+.review{
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.review .subtitle{
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 14px;
+}
+
+.review .title{
+    font-size: 30px;
+    position: relative;
+}
+
+.review .title:before{
+    content: '';
+    height: 1px ;
+    width: 100px;
+    background-color: var(--primary-color);
+    position: absolute;
+    top: 130%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.review .inner-card img{
+    width: 30%;
+}
+
+.review .inner-card p:first-child{
+    font-size: 14px;
+}
+
+.review p:last-child{
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 12px;
+}
+
+
+
+/* - ---------------------------- End Review Section */
+
+/* - ---------------------------- Start Blog Section */
+
+.blog .subtitle{
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 14px;
+}
+
+.blog h2{
+    font-size: 30px;
+    position: relative;
+}
+
+.blog h2::before{
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 100px;
+    background-color: var(--primary-color);
+    top: 130%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.blog .blog-card h6{
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.5);
+    letter-spacing: 1px;
+}
+
+.blog .blog-card .inner-card p:last-child{
+    font-size: 14px;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.blog .blog-card .inner-card img{
+    transition: all .3s ease-in-out;
+}
+
+.blog .blog-card .inner-card:hover img{
+    transform: scale(1.1);
+    filter: brightness(.5);
+}
+
+.blog .blog-card .inner-card a{
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+    color: var(--black);
+}
+
+.blog .blog-card .inner-card a:hover {
+    color: var(--primary-color);
+}
+
+
+/* - ---------------------------- End Blog Section */
+
+
+
+
+
+
+/* --------------------------------------------------------- Start Footer Section */
+
+
+
+footer{
+    background-color: var(--black);
+}
+
+
+footer .footer-logo{
+    width: 60%;
+}
+
+footer h4{
+    font-weight: 700;
+    letter-spacing: 1px;
+    display: inline-block;
+    color: var(--primary-color);
+    position: relative;
+}
+
+footer h4::before{
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 3px;
+    background-color: var(--primary-color);
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    left: 105%;
+}
+
+
+footer .footer-link{
+    transition: all .3s ease-in-out !important;
+}
+
+footer .footer-link:hover{
+    transform: translateX(10px) !important;
+}
+
+footer .sub-section{
+    background-color: rgba(255, 33, 79,.3);
+    border-radius: 10px;
+}
+
+footer .sub-section form input{
+    border: 2px solid var(--primary-color);
+}
+
+footer .footer-bottom{
+    background-color: #111111;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+
+/* --------------------------------------------------------- End Footer Section */
+
+
+/* --------------------------------------------------------- Start Scroll Top Section */
+
+.scrollTop{
+    bottom: 50px;
+    right: 50px;
+    height: 50px;
+    width: 50px;
+    background-color: #FF214F;
+    border-radius: 50%;
+    cursor: pointer;
+    transform: scale(0.9);
+    transition: all .2s ease-in-out; 
+    display: none;
+    z-index: 99999999999;
+}
+
+.scrollTop:hover{
+    transform: scale(1);
+    background-color: rgb(248, 68, 104);
+}
+
+.scrollTop i{
+    color: #fff;
+    font-size: 20px;
+}
+
+

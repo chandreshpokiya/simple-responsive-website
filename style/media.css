@@ -1,0 +1,67 @@
+
+
+
+
+/* ------------------------------------ 1199 */
+@media only screen and (max-width:1199px){
+    .logo-img {
+        width: 130px !important;
+    }
+    header .nav-link{
+        font-size: 14px;
+    }
+}
+
+
+
+
+/* ------------------------------------ 768 */
+@media only screen and (max-width:768px) {
+    .about {
+        background-position: right;
+    }
+    .sol-right{
+        padding: 20px !important;
+    }
+
+
+    .option .option-left,
+    .option .option-right{
+        height: 450px;
+        background-position: top;
+    }
+
+    
+    
+}
+
+
+
+
+/* ------------------------------------ 576PX  */
+@media only screen and (max-width:576px){
+    .carousel-caption h2 {
+        font-size: 40px;
+    }
+
+    footer .footer-top{
+        padding: 0 15px !important;
+    }
+    .feature-video h2 {
+        font-size: 30px !important;
+    }
+}
+
+
+
+
+/* 320PX very Small Screen */
+@media only screen and (max-width:320px) {
+    .logo-img {
+        width: 50px !important;
+    }
+    .carousel-caption h2{
+        font-size: 30px;
+    }
+}
+
