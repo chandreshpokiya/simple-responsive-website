@@ -5,7 +5,7 @@ Bootstrap and CSS demo website for beginners. An example for best UI Design in b
 
 Coded by - [Chandresh Pokiya](https://www.linkedin.com/in/chandresh-pokiya-1950751b7)
 
-![](./assets/readmebanner.jpg)
+![](./assets/readmebanner.png)
 
 
 ## Project Details
